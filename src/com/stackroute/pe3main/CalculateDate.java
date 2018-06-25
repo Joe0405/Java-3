@@ -11,9 +11,9 @@ public class CalculateDate {
 		Calendar firstDay = Calendar.getInstance();
 	    SimpleDateFormat day = new SimpleDateFormat("E, dd/MM/yyyy");  
 	    firstDay.setTime(date);
-	    firstDay.add(Calendar.DATE,1);
+	    firstDay.add(Calendar.DATE,0);
 	    days[0] = day.format(firstDay.getTime());
-	    firstDay.add(Calendar.DATE,6);
+	    firstDay.add(Calendar.DATE,5);
 	    days[1] = day.format(firstDay.getTime());
 		return days;
 	}	
